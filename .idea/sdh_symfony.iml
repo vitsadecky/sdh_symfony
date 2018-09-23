@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/var" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/bookmark" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/entity" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/form-plugins" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/logger" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/translation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/validation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/xml" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/elasticsearch/elasticsearch" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/google/apiclient" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/guzzlehttp/ringphp" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/guzzlehttp/streams" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/hamcrest/hamcrest-php" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/annotations" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/console" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/doctrine" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/doctrine-cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/events" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/google" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/latte/latte" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/mehr-als-nix/parallel" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/application" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/bootstrap" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/caching" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/code-checker" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/command-line" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/component-model" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/database" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/deprecated" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/di" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/finder" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/forms" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/http" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/mail" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/neon" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/nette" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/php-generator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/reflection" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/robot-loader" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/safe-stream" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/security" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/tester" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/tokenizer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/utils" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/pclzip/pclzip" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phing/phing" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpmailer/phpmailer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpexcel" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpspreadsheet" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpword" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/psr/simple-cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/react/promise" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/polyfill-ctype" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/validator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/tracy/tracy" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-escaper" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-stdlib" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-validator" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/bookmark" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/entity" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/form-plugins" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/logger" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/translation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/validation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/S602/xml" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/elasticsearch/elasticsearch" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/google/apiclient" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/guzzlehttp/ringphp" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/guzzlehttp/streams" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/hamcrest/hamcrest-php" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/annotations" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/console" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/doctrine" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/doctrine-cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/events" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/kdyby/google" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/latte/latte" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/mehr-als-nix/parallel" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/application" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/bootstrap" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/caching" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/code-checker" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/command-line" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/component-model" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/database" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/deprecated" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/di" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/finder" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/forms" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/http" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/mail" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/neon" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/nette" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/php-generator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/reflection" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/robot-loader" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/safe-stream" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/security" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/tester" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/tokenizer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/nette/utils" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/pclzip/pclzip" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phing/phing" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpmailer/phpmailer" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/common" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpexcel" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpspreadsheet" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/phpoffice/phpword" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/psr/simple-cache" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/react/promise" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/polyfill-ctype" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/validator" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/tracy/tracy" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-escaper" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-stdlib" />
+          <root url="file://$MODULE_DIR$/../../htdocs_local/skanska/bin/vendor/zendframework/zend-validator" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
