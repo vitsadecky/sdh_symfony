@@ -1,0 +1,20 @@
+<!-- Page Header -->
+<header id="masthead">
+    <nav class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <h1 class="logo">
+                    <a href="{{ path("homepage") }}">
+                        <img src="{{ asset("images/logos/logo.png") }}" alt="SDH Babice">
+                    </a>
+                </h1>
+                {{ include('components/menu.html.twig') }}
+            </div>
+        </div>
+    </nav>
+</header>
