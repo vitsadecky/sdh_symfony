@@ -1,8 +1,15 @@
-<?php
+<?php declare(strict_types=1);
+/**
+ * User: Vit Sadecky
+ * Date: 9. 4. 2018
+ * Time: 6:33
+ *
+ */
 
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -12,9 +19,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class OtherSectionController extends AbstractController
 {
     /**
-     * @Route("/ostatni/dokumenty", name="documents")
+     * @Route({"cs": "/{_locale}/ostatni/dokumenty","en": "/{_locale}/other/documents"}, name="documents",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexDocuments()
+    public function indexDocuments(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -22,9 +30,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/florian", name="florian")
+     * @Route("/{_locale}/team/florian", name="florian",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexFlorian()
+    public function indexFlorian(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -32,9 +41,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/oznaceniFunkcionaru", name="designation")
+     * @Route({"cs": "/{_locale}/ostatni/oznaceniFunkcionaru","en": "/{_locale}/other/designation"}, name="designation",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexDesignation()
+    public function indexDesignation(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -42,9 +52,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/hasiciPristroje/popis", name="descriptionFireEX")
+     * @Route({"cs": "/{_locale}/ostatni/hasiciPristroje/popis","en": "/{_locale}/other/extinguishers/description"},
+     * name="descriptionFireEX",defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexDescriptionOfFireExtinguishers()
+    public function indexDescriptionOfFireExtinguishers(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -52,9 +63,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/hasiciPristroje/efektivita", name="efficientFireEX")
+     * @Route({"cs": "/{_locale}/ostatni/hasiciPristroje/efektivita","en": "/{_locale}/other/extinguishers/efficiency"},
+     * name="efficiencyFireEX",defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexEfficientOfFireExtinguishers()
+    public function indexEfficientOfFireExtinguishers(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -62,9 +74,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/haseniPozaru", name="firefighting")
+     * @Route({"cs": "/{_locale}/ostatni/haseniPozaru","en": "/{_locale}/other/firefighting"},name="firefighting",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexFirefighting()
+    public function indexFirefighting(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -72,9 +85,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/vazaniUzlu", name="nodes")
+     * @Route({"cs": "/{_locale}/ostatni/vazaniUzlu","en": "/{_locale}/other/knottingNodes"},name="nodes",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexNodes()
+    public function indexNodes(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -82,9 +96,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/sponzoring", name="sponsoring")
+     * @Route({"cs": "/{_locale}/ostatni/sponzoring","en": "/{_locale}/other/sponsoring"},name="sponsoring",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexSponsoring()
+    public function indexSponsoring(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',
@@ -92,9 +107,10 @@ class OtherSectionController extends AbstractController
     }
 
     /**
-     * @Route("/ostatni/odkazy", name="references")
+     * @Route({"cs": "/{_locale}/ostatni/odkazy","en": "/{_locale}/other/references"},name="references",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
      */
-    public function indexReferences()
+    public function indexReferences(): Response
     {
         return $this->render('other_section/index.html.twig', [
             'controller_name' => 'OtherSectionController',

@@ -1,0 +1,353 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {% trans %}article list{% endtrans %}{% endblock %}
+
+{% block body %}
+    <!-- Main Content -->
+    <div id="content" role="main">
+        <!-- Promo Section -->
+        <section class="section section-alt">
+            <div class="super-hero-unit">
+                <figure>
+                    <img alt="some image" src="{{ asset('images/assets/section/article/header.jpg') }}" height="200px">
+                    <figcaption class="flex-caption">
+                        <h1 class="super animated fadeinup delayed">
+                            {% trans %}news{% endtrans %}
+                            <span class="lighter">
+                    &amp;
+                  </span>
+                            {% trans %}posts{% endtrans %}
+                        </h1>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="section section-padded">
+            <div class="container-fluid">
+                {% for article in articles %}
+                <div class="row-fluid">
+                    <div class="span9">
+                        <article class="post row-fluid">
+                            <div class="span2 post-info">
+                                <div class="round-box box-small">
+                                    <a class="box-inner" href="post.html">
+                                        <img alt="some image" class="img-circle"
+                                             src="{{ asset('images/assets/section/article/defaultAuthor.png') }} ">
+                                    </a>
+                                </div>
+                                <h5 class="text-center">
+                                    {{ article.author }}
+                                </h5>
+                                <h5 class="text-center light">
+                                    {{ article.publishedAt ? article.publishedAt|date('H:i:s j.n.Y') : '' }}
+                                </h5>
+                            </div>
+                            <div class="span10 post-body">
+                                <div class="post-head">
+                                    <h2 class="small-screen-center">
+                                        <a href="post.html">
+                                            {{ article.title }}
+                                        </a>
+                                    </h2>
+                                    <div class="post-extras">
+                                        <i class="icon-tags"></i>
+                                        <a href="#">PHP,</a>
+                                        <a href="#">Web Design,</a>
+                                        <a href="#">Bootstrap</a>
+                                        <i class="icon-bookmark"></i>
+                                        <a href="#">News,</a>
+                                        <a href="#">Business</a>
+                                        <i class="icon-comments"></i>
+                                        <a href="post.html#comments">5 comments</a>
+                                        <a href="{{ path('article_edit', {'id': article.id}) }} ">edit</a>
+                                    </div>
+                                </div>
+                                <figure class="post-media">
+                                    <a href="{{ path('article_show', {'id': article.id})}} ">
+                                        <img alt="some image" style="float: left" width="150px"
+                                             src="{{ asset('images/assets/section/article/defaultArticle.png') }} ">
+                                    </a>
+                                </figure>
+                                <p>
+                                    {{ article.content }}
+                                </p>
+                                <a class="more-link pull-right"
+                                   href="{{ path('article_show', {'id': article.id}) }}">
+                                    <strong>
+                                        {% trans %} Read {% endtrans %}
+                                    </strong>
+                                    {% trans %} More {% endtrans %}
+                                </a>
+                                <a class="more-link pull-right"
+                                   href="{{ path('article_edit', {'id': article.id}) }}">
+                                    <strong>
+                                        {% trans %} Edit {% endtrans %}
+                                    </strong>
+                                    {% trans %} Article {% endtrans %}
+                                </a>
+                            </div>
+                            {% else %}
+                                <div class="row-fluid">
+                                    <div class="span9">
+                                        <article class="post row-fluid">
+                                            <h4>{% trans %}no records found {% endtrans %}</h4>
+                                        </article>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </article>
+
+                        {# paginator #}
+                        <div class="row-fluid">
+                            <div class="pagination pagination-small pagination-centered offset2 span10">
+                                <ul>
+                                    <li class="disabled">
+                                        <a href="#">
+                                            <i class="icon-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="span3 sidebar">
+                        <div class="sidebar-widget widget_search">
+                            <form>
+                                <div class="input-append row-fluid">
+                                    <input class="span12" placeholder="search" type="text">
+                                    <i class="icon-search"></i>
+                                    <button class="btn hide" type="submit">
+                                        search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-widget widget_categories">
+                            <h3 class="sidebar-header">Categories</h3>
+                            <ul>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            Company
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            News
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            Services
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            Web Design
+                                        </a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget widget_tag_cloud">
+                            <h3 class="sidebar-header">Popular Tags</h3>
+                            <ul>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Mountains</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Winter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Sports</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Boating</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Recreation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Tourism</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Nature</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="post.html">
+                                        <span>Alps</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget widget_recent_entries">
+                            <h3 class="sidebar-header">Recent posts</h3>
+                            <ul>
+                                <li>
+                                    <div class="row-fluid">
+                                        <div class="span3">
+                                            <div class="round-box box-mini">
+                                                <a class="box-inner" href="post.html">
+                                                    <img alt="some image" class="img-circle"
+                                                         src="images/assets/landscapes/landscape-1-300x300.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="span9">
+                                            <h4>
+                                                <a href="post.html">
+                                                    Nunc vehicula dapibus
+                                                </a>
+                                            </h4>
+                                            <h5 class="light">
+                                                12 Feb 2013
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row-fluid">
+                                        <div class="span3">
+                                            <div class="round-box box-mini">
+                                                <a class="box-inner" href="post.html">
+                                                    <img alt="some image" class="img-circle"
+                                                         src="images/assets/landscapes/landscape-2-300x300.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="span9">
+                                            <h4>
+                                                <a href="post.html">
+                                                    Fusce a metus eu diam
+                                                </a>
+                                            </h4>
+                                            <h5 class="light">
+                                                21 Jan 2013
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row-fluid">
+                                        <div class="span3">
+                                            <div class="round-box box-mini">
+                                                <a class="box-inner" href="post.html">
+                                                    <img alt="some image" class="img-circle"
+                                                         src="images/assets/landscapes/landscape-3-300x300.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="span9">
+                                            <h4>
+                                                <a href="post.html">
+                                                    Quisque lacus augue
+                                                </a>
+                                            </h4>
+                                            <h5 class="light">
+                                                13 dec 2012
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget widget_archive">
+                            <h3 class="sidebar-header">Archive</h3>
+                            <ul>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            January
+                                            <span class="light">
+                          (12)
+                        </span>
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            December
+                                            <span class="light">
+                          (7)
+                        </span>
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            October
+                                            <span class="light">
+                          (4)
+                        </span>
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            September
+                                            <span class="light">
+                          (9)
+                        </span>
+                                        </a>
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="#">
+                                            August
+                                            <span class="light">
+                          (13)
+                        </span>
+                                        </a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget widget_twitter">
+                            <h3 class="sidebar-header">Twitter feed</h3>
+                            <div class="twitter-feed"></div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

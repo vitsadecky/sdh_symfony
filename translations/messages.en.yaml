@@ -1,0 +1,35 @@
+fire brigade: Fire brigade
+home: home
+unit: unit
+history: history
+cups: cups
+technology: technology
+gallery: gallery
+forum: forum
+events: events
+other: other
+documents: documents
+the Saint Florian: the Saint Florian
+designation of officials: designation of officials
+extinguishers - description: extinguishers - description
+extinguishers - efficiency: extinguishers - efficiency
+firefighting: firefighting
+bind knots: bind knots
+sponsoring: sponsoring
+references: references
+contact: Contact
+The Czech Republic: The Czech Republic
+latest: latest
+news: news
+posts: posts
+go back home: go Back Home
+want: want
+write: kontaktujte
+us: nás
+address: address
+contact details: contact details
+members: members
+article list: article index
+
+#entity translation validation
+article.title.notBlank: The title of the article is required

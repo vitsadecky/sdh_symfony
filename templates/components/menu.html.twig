@@ -1,61 +1,37 @@
 <div class="nav-collapse collapse">
+    <a href="{{ path("homepage") }}">
+        <img src="{{ asset('images/assets/logos/logo.png') }}" height="80px" width="80px" alt="SDH Babice"></a>
     <ul class="nav pull-right">
-        <li class=""><a href="{{ path('homepage') }}">Domů</a></li>
-        <li class=""><a href="{{ path('news') }}">Novinky</a></li>
+        <li class=""><a href="{{ path('homepage') }}">{% trans %} home {% endtrans %}</a></li>
+        <li class=""><a href="{{ path('article_index') }}">{% trans %}news{% endtrans %}</a></li>
         <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sbor</a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% trans %}fire brigade{% endtrans %}</a>
             <ul class="dropdown-menu">
-                <li>
-                    <a href="{{ path('members') }}">Členové</a>
-                </li>
-                <li>
-                    <a href="{{ path('unit') }}">Jednotka</a>
-                </li>
-                <li>
-                    <a href="{{ path('history') }}">Historie</a>
-                </li>
-                <li>
-                    <a href="{{ path('cups') }}">Poháry</a>
-                </li>
-                <li>
-                    <a href="{{ path('technology') }}">Technika</a>
-                </li>
+                <li><a href="{{ path('members') }}">{% trans %}members {% endtrans %}</a></li>
+                <li><a href="{{ path('unit') }}">{% trans %}unit{% endtrans %}</a></li>
+                <li><a href="{{ path('history') }}">{% trans %}history{% endtrans %}</a></li>
+                <li><a href="{{ path('cups') }}">{% trans %}cups{% endtrans %}</a></li>
+                <li><a href="{{ path('technology') }}">{% trans %}technology{% endtrans %}</a></li>
             </ul>
-        <li class=""><a href="{{ path('gallery') }}">Galerie</a></li>
-        <li class=""><a href="{{ path('news') }}">Diskuze</a></li>
-        <li class=""><a href="{{ path('events') }}">Události</a></li>
+        <li class=""><a href="{{ path('gallery') }}">{% trans %}gallery{% endtrans %}</a></li>
+        <li class=""><a href="{{ path('forum') }}">{% trans %}forum{% endtrans %}</a></li>
+        <li class=""><a href="{{ path('events') }}">{% trans %}events{% endtrans %}</a></li>
         <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ostatní</a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% trans %}other{% endtrans %}</a>
             <ul class="dropdown-menu">
-                <li>
-                    <a href="{{ path('documents') }}">Dokumenty</a>
+                <li><a href="{{ path('documents') }}">{% trans %}documents{% endtrans %}</a></li>
+                <li><a href="{{ path('florian') }}">{% trans %}The Saint Florian{% endtrans %}</a></li>
+                <li><a href="{{ path('designation') }}">{% trans %}designation of officials{% endtrans %}</a></li>
+                <li><a href="{{ path('descriptionFireEX') }}">{% trans %}extinguishers - description{% endtrans %}</a>
                 </li>
-                <li>
-                    <a href="{{ path('florian') }}">Svatý florián</a>
+                <li><a href="{{ path('efficiencyFireEX') }}">{% trans %}extinguishers - efficiency{% endtrans %}</a>
                 </li>
-                <li>
-                    <a href="{{ path('designation') }}">Označení funkcionářů</a>
-                </li>
-                <li>
-                    <a href="{{ path('descriptionFireEX') }}">Hasící přístroje - popis</a>
-                </li>
-                <li>
-                    <a href="{{ path('efficientFireEX') }}">Hasící přístroje - efektivita</a>
-                </li>
-                <li>
-                    <a href="{{ path('firefighting') }}">Hašení požárůů</a>
-                </li>
-                <li>
-                    <a href="{{ path('nodes') }}">Vázání uzlů</a>
-                </li>
-                <li>
-                    <a href="{{ path('sponsoring') }}">Sponzoring</a>
-                </li>
-                <li>
-                    <a href="{{ path('references') }}">Odkazy</a>
-                </li>
+                <li><a href="{{ path('firefighting') }}">{% trans %}firefighting{% endtrans %}</a></li>
+                <li><a href="{{ path('nodes') }}">{% trans %}bind knots{% endtrans %}</a></li>
+                <li><a href="{{ path('sponsoring') }}">{% trans %}sponsoring{% endtrans %}</a></li>
+                <li><a href="{{ path('references') }}">{% trans %}references{% endtrans %}</a></li>
             </ul>
         </li>
-        <li class=""><a href="{{ path('contact') }}">Kontakt</a></li>
+        <li class=""><a href="{{ path('contact') }}">{% trans %}contact{% endtrans %}</a></li>
     </ul>
 </div>

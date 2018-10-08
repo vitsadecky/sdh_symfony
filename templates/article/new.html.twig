@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+{% block body %}
+    <section class="section section-padded">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>
+                    {% trans %} Create new article {% endtrans %}
+                </h2>
+            </div>
+            <hr>
+            <div class="row-fluid">
+                {{ include('article/_form.html.twig') }}
+                <a href="{{ path('article_index') }}">{% trans %}back to list {% endtrans %}</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

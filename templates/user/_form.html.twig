@@ -1,0 +1,58 @@
+{{ form_start(form) }}
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.firstName,{ 'label': 'firstName', 'attr': {'class': "form-control",'placeholder': 'firstname'} }) }}
+
+    </div>
+</div>
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.surname,{ 'label': 'surname', 'attr': {'class': "form-control", 'placeholder': 'surname'} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.email,{ 'label': 'email', 'attr': {'class': "form-control",  'placeholder': 'email'} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.language,{ 'label': 'language', 'attr': {'class': "form-control",  'placeholder': 'language'} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.login,{ 'label': 'login', 'attr': {'class': "form-control",  'placeholder': 'login'} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.password,{ 'label': 'password', 'attr': {'class': "form-control",  'placeholder': 'password'} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.birthDate,{ 'label': 'surname', 'attr': {'class': "span12"} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.gender,{ 'label': 'surname', 'attr': {'class': "span12"} }) }}
+    </div>
+</div>
+
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.surname,{ 'label': 'surname', 'attr': {'class': "span12"} }) }}
+    </div>
+</div>
+
+<button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+

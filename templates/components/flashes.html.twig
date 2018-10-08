@@ -1,0 +1,13 @@
+{# Page notifications/messages #}
+<div class="container">
+    {% for level, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ level }}" role="alert">
+                <strong> {{ message }} </strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>

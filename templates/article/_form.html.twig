@@ -1,0 +1,16 @@
+{{ form_start(form) }}
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.title,{ 'label': 'Název článku', 'attr': {'class': "span12",'placeholder': 'article title'} }) }}
+
+    </div>
+</div>
+<div class="controls controls-row">
+    <div class="control-group span6">
+        {{ form_widget(form.content,{ 'label': 'obsah článku', 'attr': {'class': "span12",'placeholder': 'content here'} }) }}
+    </div>
+</div>
+
+<button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+

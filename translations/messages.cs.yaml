@@ -1,0 +1,34 @@
+fire brigade: Sbor
+home: domů
+news: novinky
+members: členové
+unit: jednotka
+history: historie
+cups: poháry
+technology: technika
+gallery: galerie
+forum: diskuze
+events: události
+other: ostatní
+documents: dokumenty
+The Saint Florian: Svatý Florián
+designation of officials: označení funkcionářů
+extinguishers - description: hasící přístroje - popis
+extinguishers - efficiency: hasící přístroje - efektivita
+firefighting: hašení požárů
+bind knots: vázání uzlů
+sponsoring: sponzoring
+references: odkazy
+contact: kontakt
+The Czech Republic: Česká Republika
+latest: nejnovější
+posts: články
+go back home: zpět na hlavní stránku
+write: kontaktujte
+us: nás
+address: adresa
+contact details: kontaktní údaje
+article list: seznam článků
+
+#entity translation validation
+article.title.notBlank: Název článku je povinný

@@ -1,12 +1,29 @@
-<?php
+<?php declare(strict_types=1);
+/**
+ * User: Vit Sadecky
+ * Date: 9. 4. 2018
+ * Time: 6:33
+ */
 
 namespace App\Controller;
 
+use App\Factory\NotificationFactory;
+use App\Form\NotificationType;
+use App\Manager\Exception\NotificationException;
+use App\Manager\NotificationManagerInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\{Request, Response};
 use Symfony\Component\Routing\Annotation\Route;
+
 
 /**
  * Class DefaultController
+ * @Route(
+ *     {"cs": "{_locale}", "en": "/{_locale}"},
+ *     defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"}
+ *     )
+ *
  * @package App\Controller
  */
 class DefaultController extends AbstractController
@@ -14,58 +31,45 @@ class DefaultController extends AbstractController
     /**
      * Load the site definition and redirect to the default page.
      *
-     * @Route("/", name="homepage")
+     * @Route("/", name="homepage",
+     * defaults={"_locale": "cs"}, requirements={"_locale": "cs|en"})
+     * @throws \LogicException
      */
-    public function indexHomepage()
+    public function indexMain(): Response
     {
         return $this->render('default/index.html.twig');
     }
 
     /**
-     * @Route("/novinky", name="news")
+     * @Route({"cs": "/kontakt","en": "/contact"}, name="contact")
+     *
+     * @param Request $request
+     * @param NotificationFactory $notificationFactory
+     * @param NotificationManagerInterface $notificationManager
+     * @param LoggerInterface $logger
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
      */
-    public function indexNews()
+    public function indexContact(Request $request,
+                                 NotificationFactory $notificationFactory,
+                                 NotificationManagerInterface $notificationManager,
+                                 LoggerInterface $logger)
     {
-        return $this->render('default/index.html.twig');
-    }
+        $notification = $notificationFactory->create();
 
-    /**
-     * @Route("/udalosti", name="events")
-     */
-    public function indexEvents()
-    {
-        return $this->render('default/index.html.twig');
-    }
+        $form = $this->createForm(NotificationType::class, $notification);
+        $form->handleRequest($request);
 
-    /**
-     * @Route("/galerie", name="gallery")
-     */
-    public function indexGallery()
-    {
-        return $this->render('default/index.html.twig');
-    }
+        if($form->isSubmitted()) {  //submit form
+            try {
+                $notificationManager->notify($notification);
+            } catch (NotificationException $exception) {
+                $this->addFlash('error', $exception->getMessage());
+                $logger->warning($exception->getMessage());
+            } catch (\Throwable $throwable) {
+                $logger->error($throwable->getMessage());
+            }
+        }
 
-    /**
-     * @Route("/diskuze", name="forum")
-     */
-    public function indexForum()
-    {
-        return $this->render('default/index.html.twig');
-    }
-
-    /**
-     * @Route("/kontakt", name="contact")
-     */
-    public function indexContact()
-    {
-        return $this->render('default/index.html.twig');
-    }
-
-    /**
-     * @Route("/nenalezeno", name="notFound")
-     */
-    public function indexNotFound()
-    {
-        return $this->render('default/index.html.twig');
+        return $this->redirectToRoute('homepage');
     }
 }
